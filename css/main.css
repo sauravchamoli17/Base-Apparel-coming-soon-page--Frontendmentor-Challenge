@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+:root {
+  --desaturatedred: hsl(0, 36%, 70%);
+  --softred: hsl(0, 93%, 68%);
+  --darkgrayishred: hsl(0, 6%, 24%);
+}
+body {
+  background: url("../images/bg-pattern-desktop.svg") no-repeat;
+  overflow-x: hidden;
+  margin: 0;
+}
+header {
+  display: none;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+.left {
+  width: 55%;
+  padding-left: 150px;
+  padding-top: 50px;
+}
+.head {
+  padding-right: 150px;
+  padding-top: 100px;
+}
+h1 {
+  color: var(--softred);
+  letter-spacing: 15px;
+  font-size: 50px;
+  margin: 5px;
+  margin-top: 75px;
+  margin-left: 0;
+  font-weight: 200;
+}
+h2 {
+  letter-spacing: 15px;
+  margin: 5px;
+  margin-left: 0;
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--darkgrayishred);
+}
+p {
+  color: var(--desaturatedred);
+  line-height: 1.5rem;
+  padding-top: 10px;
+}
+
+/* FORM CSS */
+#field {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid var(--desaturatedred);
+  margin-top: 40px;
+}
+input {
+  outline: none;
+  background: none;
+  width: 75%;
+  height: 100%;
+  border: none;
+  padding-left: 25px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+::placeholder {
+  color: var(--desaturatedred);
+}
+.action {
+  float: right;
+  padding: 0;
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+}
+button {
+  height: 100%;
+  width: 80%;
+  float: right;
+  padding: 0;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 74%, 74%));
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  cursor: pointer;
+  padding-right: 4px;
+}
+button img {
+  text-align: center;
+}
+#error {
+  float: left;
+  visibility: hidden;
+}
+#errormsg {
+  color: var(--softred);
+  font-size: 14px;
+  margin-top: 3.5px;
+  padding-left: 25px;
+  visibility: hidden;
+}
+.right {
+  width: auto;
+}
+.mobile {
+  display: none;
+}
+
+/* Desktop Code Complete */
+
+/* Mobile Code Started */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  header {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+  .desktop {
+    display: none;
+  }
+  .headerlogo {
+    padding-top: 20px;
+    padding-left: 25px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+  .left {
+    order: 1;
+    padding: 0;
+    width: 100%;
+  }
+  .head {
+    padding: 0;
+  }
+  h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+  }
+  h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  p {
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  form {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .field {
+    padding-top: 5px;
+  }
+  #errormsg {
+    margin-top: 0.5px;
+    padding-left: 25px;
+    visibility: hidden;
+  }
+  .attribution {
+    padding-top: 65px;
+  }
+  .right {
+    width: 100%;
+  }
+  .mobile {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+  }
+}
+/* Code Freeze */

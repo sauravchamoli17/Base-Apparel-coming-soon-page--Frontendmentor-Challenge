@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="headerlogo">
+          <a href="#">
+          <img src="./images/logo.svg" alt="Logo" />
+          </a>
+        </div>
+    </header>
+    <div class="container">
+      <div class="left">
+         <div class="logo">
+          <a href="#">
+          <img src="./images/logo.svg" alt="Logo" />
+          </a>
+        </div>
+        <div class="head">
+          <h1>WE'RE</h1>
+          <h2>COMING</h2>
+          <h2>SOON</h2>
+          <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+            <div class="detail">
+              <form action="">
+                <div id="field">
+              <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                autocomplete="on"
+                required
+              />
+              <div class="action">
+                <img src="./images/icon-error.svg" id="error" alt="Error Image">
+                <button type="submit">
+                <img src="./images/icon-arrow.svg" alt="Arrow Icon" />
+              </button>
+              </div>
+              <p id="errormsg">
+                Please provide a valid email
+              </p>
+              </div>
+        </div><!-- Email Container Closed -->
+        </div><!-- Head Closed -->
+      </div><!-- Container Closed --> 
+      <div class="right">
+        <img src="./images/hero-desktop.jpg" class="desktop" alt="Desktop Hero Image">
+        <img src="./images/hero-mobile.jpg" class="mobile" alt="Mobile Hero Image">
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://www.linkedin.com/in/saurav-chamoli/">Saurav Chamoli</a>.
+      </p>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
