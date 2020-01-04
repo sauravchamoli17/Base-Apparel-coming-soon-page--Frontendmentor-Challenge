@@ -36,7 +36,7 @@ header {
 h1 {
   color: var(--softred);
   letter-spacing: 15px;
-  font-size: 50px;
+  font-size: 60px;
   margin: 5px;
   margin-top: 75px;
   margin-left: 0;
@@ -47,7 +47,7 @@ h2 {
   margin: 5px;
   margin-left: 0;
   font-weight: 600;
-  font-size: 48px;
+  font-size: 58px;
   color: var(--darkgrayishred);
 }
 p {
