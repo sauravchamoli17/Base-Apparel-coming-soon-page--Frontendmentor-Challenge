@@ -34,7 +34,7 @@ header {
   padding-top: 100px;
 }
 h1 {
-  color: var(--softred);
+  color: var(--desaturatedred);
   letter-spacing: 15px;
   font-size: 60px;
   margin: 5px;
