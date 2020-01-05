@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
       y.style.visibility = "visible";
       z.style.border = "2px solid hsl(0, 93%, 68%)";
     }
+    else{
+      x.style.visibility="hidden";
+      y.style.visibility="hidden";
+      z.style.border = "2px solid hsl(0, 36%, 70%)";
+    }
   };
   email.oninput = function(e) {
     e.target.setCustomValidity("");
