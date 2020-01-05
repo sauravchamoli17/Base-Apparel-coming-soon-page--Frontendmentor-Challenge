@@ -77,6 +77,7 @@ input {
 input:focus{
 border:none;
 outline:none;
+background:none;
 }
 ::placeholder {
   color: var(--desaturatedred);
